@@ -23,22 +23,28 @@
 <form action="{{ url_for('result.clear_results') }}" method="post">
     <input class="danger" type="submit" value="Delete" onclick="return confirm('Are you sure?');">
 </form>
+<div>
 <h1>Results</h1>
-  {% for post in posts %}
-    <article class="post">
-      <header>
-        <div>
-          <h1>Model: {{ post['model_name'] }} </h1>
-          <div class="about">
-              result was {{ post['result'] }} 
-              at {{ post['generated'].strftime('%Y-%m-%d') }}
-          </div>
-        </div>
-      </header>
-      <p class="body">{{ post['input_text'] }}</p>
-    </article>
-    {% if not loop.last %}
-      <hr>
-    {% endif %}
-  {% endfor %}
+          <table class="table">
+              <thead>
+                  <tr>
+                    <th scope="col">Model</th>
+                    <th scope="col">Headline</th>
+                    <th scope="col">Result</th>
+                  </tr>
+                </thead>
+              <tbody>
+                  {% for post in posts %}
+                  <tr>
+                      <th scope="row">{{ post['model_name'] }}</th>
+                      <td>{{ post['input_text'] }}</td>
+                      <td>{{ post['result'] }} </td>
+                  </tr>
+                    {% if not loop.last %}
+                  {% endif %}
+                  {% endfor %}
+              </tbody>
+          </table>
+    </div>
 {% endblock %}
+
