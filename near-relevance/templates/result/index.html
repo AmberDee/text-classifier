@@ -1,12 +1,14 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}Get Prediction{% endblock %}</h1>
+  <h2>{% block title %}Get Prediction{% endblock %}</h2>
 {% endblock %}
 
 {% block content %}
 <form method="post">
-    <label for="model">Model</label>
+    <div class="card">
+        <h3><label for="model">Model</label></h3>
+      <div class="card-body">
         <select id="model" name="model" required>
 
                 {% for model in models %}
@@ -16,16 +18,22 @@
                 {% endfor %}
 
         </select>
-    <label for="headline">Headline</label>
+      
+
+    <h3><label for="headline">Headline</label></h3>
     <textarea name="headline" id="headline">{{ request.form['headline'] }}</textarea>
+
     <input type="submit" value="Predict">
+  </div>
+</div>
   </form>
-<form action="{{ url_for('result.clear_results') }}" method="post">
-    <input class="danger" type="submit" value="Delete" onclick="return confirm('Are you sure?');">
-</form>
+
 <div>
-<h1>Results</h1>
-          <table class="table">
+<h2>Results</h2>
+<form action="{{ url_for('result.clear_results') }}" method="post">
+    <input class="danger" type="submit" value="Clear Results" onclick="return confirm('Are you sure?');">
+</form>
+          <table class="table table-striped">
               <thead>
                   <tr>
                     <th scope="col">Model</th>
