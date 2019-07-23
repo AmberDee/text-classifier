@@ -1,5 +1,5 @@
 # Create a virtual enviroment to start the flask app
-#### for reference [https://flask.palletsprojects.com/en/1.1.x/installation/#install-create-env]
+#### For reference https://flask.palletsprojects.com/en/1.1.x/installation/#install-create-env
 ## For Mac:
 `$ mkdir myproject`
 
@@ -20,7 +20,7 @@ $ cd myproject
 `$ pip3 install -r requirements.txt`
 
 # Start the flask app
-#### for reference [https://flask.palletsprojects.com/en/1.1.x/tutorial/factory/]
+#### For reference https://flask.palletsprojects.com/en/1.1.x/tutorial/factory/
 
 ## For Mac
 `$ export FLASK_APP=near-relevance`  
