@@ -24,10 +24,14 @@ $ cd myproject
 
 ## For Mac
 `$ export FLASK_APP=near-relevance`  
+
 `$ export FLASK_ENV=development`  
+
 `$ flask run`
 
 ## For Windows
 `> $env:FLASK_APP = "near-relevance"`  
+
 `> $env:FLASK_ENV = "development"`  
+
 `> flask run`
