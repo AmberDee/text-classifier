@@ -23,11 +23,11 @@ $ cd myproject
 [https://flask.palletsprojects.com/en/1.1.x/tutorial/factory/]
 
 ## For Mac
-`$ export FLASK_APP=near-relevance`
-`$ export FLASK_ENV=development`
+`$ export FLASK_APP=near-relevance`  
+`$ export FLASK_ENV=development`  
 `$ flask run`
 
 ## For Windows
-`> $env:FLASK_APP = "near-relevance"`
-`> $env:FLASK_ENV = "development"`
+`> $env:FLASK_APP = "near-relevance"`  
+`> $env:FLASK_ENV = "development"`  
 `> flask run`
