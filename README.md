@@ -1,3 +1,12 @@
+# Clone the repository from github
+`git clone https://github.com/AmberDee/text-classifier.git`  
+
+# Install the needed packages in order to create the classifier
+
+`cd text-classifier`
+
+`pip install .`
+
 # Create a virtual enviroment to start the flask app
 #### For reference https://flask.palletsprojects.com/en/1.1.x/installation/#install-create-env
 ## For Mac:
