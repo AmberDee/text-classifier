@@ -1,0 +1,6 @@
+include near-relevance/schema.sql
+graft near-relevance/static
+graft near-relevance/templates
+graft near-relevance/class_models
+graft models
+global-exclude *.pyc
