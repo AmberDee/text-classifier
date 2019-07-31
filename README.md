@@ -44,3 +44,17 @@ $ cd myproject
 `> $env:FLASK_ENV = "development"`  
 
 `> flask run`
+
+##For the command line application
+
+`cd cmd_line`
+
+##to run, model values are ulmfit, logistic or xgboost
+# pass in headline in double quotes
+
+
+`python get_prediction.py --model=[model] --headline=["headline text"]`
+
+#example
+
+`python get_prediction.py --model=ulmfit --headline="stock market is down"`
